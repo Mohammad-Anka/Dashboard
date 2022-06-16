@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- FONT AWSOME CDN -->
+    <script src="https://kit.fontawesome.com/abc728f441.js" crossorigin="anonymous"></script>
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="company logo">
+                    <h2 class="text-muted">Fe<span class="warning">nix</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a class="active " href="#">
+                    <span><i class="fas fa-th-large"></i></span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#">
+                    <span><i class="far fa-user"></i></span>
+                    <h3>Customers</h3>
+                </a>
+                <a href="#">
+                    <span><i class="fas fa-scroll"></i></span>
+                    <h3>Orders</h3>
+                </a>
+                <a href="#">
+                    <span><i class="fas fa-chart-pie"></i></span>
+                    <h3>Analytics</h3>
+                </a>
+                <a href="#">
+                    <span><i class="fas fa-envelope"></i></span>
+                    <h3>Messages</h3>
+                    <span class="message-count">26</span>
+                </a>
+                <a href="#">
+                    <span><i class="fas fa-box-open"></i></span>
+                    <h3>Products</h3>
+                </a>
+                <a href="#">
+                    <span><i class="fas fa-exclamation-circle"></i></span>
+                    <h3>Reports</h3>
+                </a>
+                <a href="#">
+                    <span><i class="fas fa-cog"></i></span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="#">
+                    <span><i class="fas fa-plus"></i></span>
+                    <h3>Add Product</h3>
+                </a>
+                <a href="#">
+                    <span><i class="fas fa-sign-out-alt"></i></span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- ---------------- END OF ASIDE ---------------- -->
+        <main>
+            <h1>Dashboard</h1>
+
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <div class="insights">
+                <div class="sales">
+                    <i class="fas fa-chart-bar"></i>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Sales</h3>
+                            <h1>$25.024</h1>
+                        </div>
+                        <div class="progress">
+                            <span class="chart" data-percent="86" data-bar-color="#7380ec">
+                                <span class="percent"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <!--------------- END OF SLAES --------------->
+                <div class="expenses">
+                    <i class="fas fa-chart-area"></i>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Expenses</h3>
+                            <h1>$12.523</h1>
+                        </div>
+                        <div class="progress">
+                            <span class="chart" data-percent="48" data-bar-color="#ff7782">
+                                <span class="percent"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <!--------------- END OF EXPENSES --------------->
+                <div class="income">
+                    <i class="fas fa-chart-line"></i>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Income</h3>
+                            <h1>$18.362</h1>
+                        </div>
+                        <div class="progress">
+                            <span class="chart" data-percent="74" data-bar-color="#41f1b6">
+                                <span class="percent"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <!--------------- END OF INCOME --------------->
+            </div>
+            <!--------------- END OF INSIGHTS --------------->
+
+            <div class="recent-orders">
+                <h2>Recent Ordwers</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Product Number</th>
+                            <th>Payment</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Filled by orders.js File -->
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+        </main>
+        <!-- ---------------- END OF MAIN ---------------- -->
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="theme-toggler">
+                    <i class="active fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey ,<b>Daniel</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="./images/profile-1.jpg" alt="profile-pictures">
+                    </div>
+                </div>
+            </div>
+            <!-- ---------------- END OF TOP ---------------- -->
+            <div class="recent-updates">
+                <h2>Recent Updates</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./images/profile-2.jpg" alt="profile photo">
+                        </div>
+                        <div class="message">
+                            <p><b>Mike Tyson</b>Received his oreder of night lion tech gps drone.</p>
+                            <small class="text-muted">2 Minutes Ago</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./images/profile-3.jpg" alt="profile photo">
+                        </div>
+                        <div class="message">
+                            <p><b>Diana Ayi</b>Decline her order of 2 Dji Air 2S</p>
+                            <small class="text-muted">5 Minutes Ago</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./images/profile-4.jpg" alt="profile photo">
+                        </div>
+                        <div class="message">
+                            <p><b>Mand Roye</b>Received his oreder of LARVENDER GB103 Drone.</p>
+                            <small class="text-muted">1 Hours Ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ---------------- END OF RECENT UPDATE ---------------- -->
+            <div class="sales-analytics">
+                <h2>Sales Analysics</h2>
+                <div class="item online">
+                    <div class="icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>ONLINE ORDERS</h3>
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+                        <h5 class="success">+39%</h5>
+                        <h3>3849</h3>
+                    </div>
+                </div>
+                <div class="item offline">
+                    <div class="icon">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>OFFLINE ORDERS</h3>
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+                        <h5 class="danger">-17%</h5>
+                        <h3>1100</h3>
+                    </div>
+                </div>
+                <div class="item customers">
+                    <div class="icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>NEW CUSTOMERS</h3>
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+                        <h5 class="success">+25%</h5>
+                        <h3>875</h3>
+                    </div>
+                </div>
+                <div class="item add-product">
+                    <div>
+                        <i class="fas fa-plus"></i>
+                        <h3>Add Product</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/jquery.easypiechart.js"></script>
+    <script src="./js/orders.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
